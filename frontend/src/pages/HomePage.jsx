@@ -80,10 +80,10 @@ export default function HomePage() {
     <Box
       bg={useColorModeValue("gray.50", "gray.800")}
       display={"grid"}
-      gridTemplateColumns={{ base: "50% 50%", sm: "50% 50%" }}
+      gridTemplateColumns={{ base: "repeat(1,1fr)", sm: "50% 50%" }}
       pl={"15px"}
     >
-      <Box bg={useColorModeValue("gray.50", "gray.800")}>
+      <Box bg={useColorModeValue("gray.50", "gray.800")} px={5}>
         <Heading textAlign={"center"} display={"block"} mt={"40px"}>
           Welcome to E-Voting
         </Heading>
@@ -110,7 +110,9 @@ export default function HomePage() {
         >
           <Stack spacing={8} mx={"auto"} maxW={"lg"} py={12} px={6}>
             <Stack align={"center"}>
-              <Heading fontSize={"4xl"}>Sign in to your account</Heading>
+              <Heading fontSize={"4xl"} textAlign={"center"}>
+                Sign in to your account
+              </Heading>
             </Stack>
             <Box
               rounded={"lg"}

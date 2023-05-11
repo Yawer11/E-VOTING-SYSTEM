@@ -80,7 +80,13 @@ export default function AdminSignin() {
       justify={"center"}
       bg={useColorModeValue("gray.50", "gray.800")}
     >
-      <Stack spacing={8} mx={"auto"} width={"50%"} py={12} px={6}>
+      <Stack
+        spacing={8}
+        mx={"auto"}
+        width={{ base: "90%", sm: "50%" }}
+        py={12}
+        px={6}
+      >
         <Stack align={"center"}>
           <Heading color={"teal"} fontSize={"4xl"}>
             Signin As Admin
